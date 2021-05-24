@@ -25,11 +25,10 @@ function solve(input) {
             } return true
         }
     }
-    for (let i = 1; i <= count; i += 1) {
+    for (let i = 1; i <= lines[count]; i += 1) {
         console.log(isPrime(Number(lines[i])) ? 'Prime' : 'Composite')
     }
 }
-
 rl.on('close', () => {
     solve(lines)
 })
