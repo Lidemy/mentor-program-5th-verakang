@@ -28,10 +28,7 @@ function solve(input) {
         return a > b ? 'A' : 'B'
     }
     for (let i = 1; i <= lines[0]; i++) {
-        const tmp = lines[i].split(' ')
-        const x = tmp[0]
-        const y = tmp[1]
-        const z = tmp[2]
+        const [x, y, z] = lines[i].split(' ')
         console.log(compare(x, y, z))
     }
 }
