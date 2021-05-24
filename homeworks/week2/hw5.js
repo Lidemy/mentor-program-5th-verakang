@@ -1,18 +1,21 @@
 //hw5：自己的函式自己寫
 
 function join(arr, concatStr) {
-    var newWord = ''
-    for (var i = 0; i < arr.length - 1; i++) {
-        newWord = newWord + arr[i] + concatStr
+    if (arr.length === 0) {
+        return ''
     }
-    return newWord + arr[arr.length - 1]
+    var newStr = ''
+    for (var i = 0; i < arr.length - 1; i++) {
+        newStr += arr[i] + concatStr
+    }
+    return newStr + arr[arr.length - 1]
 }
 
 function repeat(str, times) {
-    var tmp = ''
+    var newStr = ''
     for (var i = 0; i < times; i++) {
-        tmp = tmp + str
-    }
+        newStr += str
+    } return newStr
 }
 
 console.log(join(['a'], '!'));
