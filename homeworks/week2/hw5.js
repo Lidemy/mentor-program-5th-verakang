@@ -15,7 +15,8 @@ function repeat(str, times) {
     var newStr = ''
     for (var i = 0; i < times; i++) {
         newStr += str
-    } return newStr
+    } 
+    return newStr
 }
 
 console.log(join(['a'], '!'));
