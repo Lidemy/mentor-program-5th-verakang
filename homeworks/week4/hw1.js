@@ -1,12 +1,20 @@
 /* eslint-disable indent */
 const request = require('request')
 
-request('https://lidemy-book-store.herokuapp.com/books',
+request('https://lidemy-book-store.herokuapp.com/books?_limit=10',
     (error, response, body) => {
-        console.error('error:', error)
-        console.log('statusCode:', response && response.statusCode)
-        const json = JSON.parse(body)
-        for (let i = 0; i < 10; i++) {
-            console.log(`${json[i].id} ${json[i].name}`)
+        if (error) {
+            console.log('error', error)
+            return
+        }
+        let books
+        try {
+            books = JSON.parse(body)
+        } catch (error) {
+            console.log('error', error)
+            return
+        }
+        for (let i = 0; i < books.length; i++) {
+            console.log(`${books[i].id} ${books[i].name}`)
         }
     })
