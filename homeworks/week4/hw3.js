@@ -4,8 +4,8 @@ const request = require('request')
 const argv = process.argv[2]
 const apiUrl = 'https://restcountries.eu/rest/v2/name/'
 
-function getCountry(argv) {
-    request.get(`${apiUrl}${argv}`,
+function getCountry(name) {
+    request.get(`${apiUrl}${name}`,
         (error, response, body) => {
             if (error) {
                 console.log('抓取失敗', error)
