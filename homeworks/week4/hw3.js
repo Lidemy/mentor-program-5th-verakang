@@ -5,6 +5,10 @@ const argv = process.argv[2]
 const apiUrl = 'https://restcountries.eu/rest/v2/name/'
 
 function getCountry(name) {
+    if (!argv) {
+        console.log('請輸入國家名稱！')
+        return
+    }
     request.get(`${apiUrl}${name}`,
         (error, response, body) => {
             if (error) {
