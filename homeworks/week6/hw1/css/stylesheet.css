@@ -147,8 +147,7 @@ h1,h2,p{
     width: 100%;
     border: solid 1px #c7e5ec;
     box-shadow: -1.4px -1.4px 4px 0 var(--light-blue-grey);
-    margin: 0 10px;
-    
+    margin: 0 10px; 
 }
 .post__avatar{
     position: absolute;
