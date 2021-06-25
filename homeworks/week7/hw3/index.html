@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My TODO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="./stylesheet.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="notes">
+            <h1>My TODO</h1>
+            <input type="text" class="todo__creat" name="todo" placeholder="請輸入待辦事項" />
+            <ul class="todo__list">
+                <label class="todo__item">
+                    <li>
+                        <input type="checkbox" class="todo__check" name='001'>
+                        <p class="todo__desc">完成交接＆驗收報告</p>
+                        <button class="todo__delete">X</button>
+                    </li>
+                </label>
+            </ul>
+            <div>
+                <button class="btn__delete">刪除已完成TODO</button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
