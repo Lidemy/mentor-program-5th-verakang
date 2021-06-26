@@ -1,6 +1,4 @@
 /* eslint-disable indent */
-/* eslint-disable indent */
-/* eslint-disable indent */
 
 document.querySelector('.todo__creat').addEventListener('keypress', (e) => {
     if (e.key === 'Enter') {

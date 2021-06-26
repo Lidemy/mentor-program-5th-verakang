@@ -83,6 +83,7 @@ h1{
     margin: 5px;
     padding: 1px 3px;
     border: none;
+    border-radius: 30%;
     background:#769b8f;
     color: #fcf7f7;
 }
