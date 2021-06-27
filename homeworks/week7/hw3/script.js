@@ -1,5 +1,6 @@
 /* eslint-disable indent */
 
+// 新增TODO
 document.querySelector('.todo__creat').addEventListener('keypress', (e) => {
     if (e.key === 'Enter') {
         const add = document.querySelector('.todo__creat').value
@@ -17,6 +18,7 @@ document.querySelector('.todo__creat').addEventListener('keypress', (e) => {
     }
 })
 
+// 標註已完成TODO
 document.querySelector('.todo__list').addEventListener('click',
     (e) => {
         if (e.target.classList.contains('todo__check')) {
@@ -26,6 +28,7 @@ document.querySelector('.todo__list').addEventListener('click',
     }
 )
 
+// 刪除TODO
 document.querySelector('.todo__list').addEventListener('click',
     (e) => {
         if (e.target.classList.contains('todo__delete')) {
@@ -35,6 +38,7 @@ document.querySelector('.todo__list').addEventListener('click',
     }
 )
 
+// 刪除已完成所有TODO
 document.querySelector('.btn__delete').addEventListener('click',
     (e) => {
         if (e.target.classList.contains('btn__delete')) {
