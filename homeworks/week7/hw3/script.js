@@ -1,22 +1,23 @@
 /* eslint-disable indent */
 
 // 新增TODO
-document.querySelector('.todo__creat').addEventListener('keypress', (e) => {
-    if (e.key === 'Enter') {
-        const add = document.querySelector('.todo__creat').value
-        const label = document.createElement('label')
-        label.classList.add('todo__item')
-        label.innerHTML = `
+document.querySelector('.todo__creat').addEventListener('keypress',
+    (e) => {
+        if (e.key === 'Enter') {
+            const add = document.querySelector('.todo__creat').value
+            const label = document.createElement('label')
+            label.classList.add('todo__item')
+            label.innerHTML = `
             <li>
                 <input type="checkbox" class="todo__check">
                 <p class="todo__desc">${add}</p>
                 <button class="todo__delete">X</button>
             </li>
         `
-        document.querySelector('.todo__list').appendChild(label)
-        document.querySelector('.todo__creat').value = ' '
-    }
-})
+            document.querySelector('.todo__list').appendChild(label)
+            document.querySelector('.todo__creat').value = ' '
+        }
+    })
 
 // 標註已完成TODO
 document.querySelector('.todo__list').addEventListener('click',

@@ -21,28 +21,33 @@
             </p>
         </div>
         <form>
-            <div class="form__list form__name">
-                <p class="required">暱稱</p>
+            <div class="form__list required">
+                <p>姓名</p>
                 <input type="text" name="name" placeholder="您的回答" />
+                <div class="check check__hidden">請輸入姓名</div>
             </div>
-            <div class="form__list form__mail">
-                <p class="required">電子郵件</p>
+            <div class="form__list required">
+                <p>電子郵件</p>
                 <input type="email" name="email" placeholder="您的電子郵件" />
+                <div class="check check__hidden">請輸入電子郵件</div>
             </div>
-            <div class="form__list form__phone">
-                <p class="required">手機號碼</p>
+            <div class="form__list required">
+                <p>手機號碼</p>
                 <input type="number" name="phone" placeholder="您的手機號碼" />
+                <div class="check check__hidden">請輸入手機號碼</div>
             </div>
-            <div class="form__list">
-                <p class="required">報名類型</p>
+            <div class="form__list required">
+                <p>報名類型</p>
                 <div class="options">
                     <input type="radio" name="type" id="options_01"><label for="options_01">躺在床上用想像力實作</label><br>
                     <input type="radio" name="type" id="options_02"><label for="options_02">趴在地上滑手機找現成的</label>
                 </div>
+                <div class="check check__hidden">請輸入報名類型</div>
             </div>
-            <div class="form__list">
-                <p class="required">怎麼知道這個活動的？</p>
-                <input type="text" name="pipeline" placeholder="您的回答" />
+            <div class="form__list required">
+                <p>怎麼知道這個活動的？</p>
+                <input type="text" name="access" placeholder="您的回答" />
+                <div class="check check__hidden">請輸入內容</div>
             </div>
             <div class="form__list">
                 <p>其他</p>

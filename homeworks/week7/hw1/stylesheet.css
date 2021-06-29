@@ -21,16 +21,23 @@ p{
     color: #e74149;
     font-size: 16px;;
 }
+.form__list{
+    position: relative;
+}
 .form__list p{
     font-size: 20px;
     margin-top: 50px;
 }
 .form__list .check{
-    font-size: 18px;
+    position: absolute;
+    bottom: -30px;
+    font-size: 16px;
     color: #e74149;
-    margin-top: 10px;
 }
-.form__list .required::after{
+.form__list .check__hidden{
+    visibility: hidden;
+}
+.required p:after{
     content: '*';
     color: #e74149;
     font-size: 16px;
@@ -54,7 +61,9 @@ p{
 }
 .form__list .options input{
     width: 15px;
+    margin-top: 10px;
     margin-right: 8px;
+    
 }
 .form__list .form__desc{
     margin-top: 12px;
