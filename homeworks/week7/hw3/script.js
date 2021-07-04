@@ -5,17 +5,26 @@ document.querySelector('.todo__creat').addEventListener('keypress',
     (e) => {
         if (e.key === 'Enter') {
             const add = document.querySelector('.todo__creat').value
+            if (add.trim() === '') return
             const label = document.createElement('label')
             label.classList.add('todo__item')
             label.innerHTML = `
             <li>
-                <input type="checkbox" class="todo__check">
-                <p class="todo__desc">${add}</p>
-                <button class="todo__delete">X</button>
+                <input type='checkbox' class='todo__check'>
+                <p class='todo__desc'>${escapeHtml(add)}</p>
+                <button class='todo__delete'>X</button>
             </li>
         `
             document.querySelector('.todo__list').appendChild(label)
-            document.querySelector('.todo__creat').value = ' '
+            document.querySelector('.todo__creat').value = ''
+        }
+        function escapeHtml(unsafe) {
+            return unsafe
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#039;')
         }
     })
 
