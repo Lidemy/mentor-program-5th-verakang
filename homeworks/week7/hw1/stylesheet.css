@@ -1,0 +1,110 @@
+body{
+    background: #ddd;
+}
+.wrapper{
+    width: 645px;
+    background: #fff;
+    border-top: solid 8px #fad312;
+    margin: 80px auto;
+    padding: 50px 40px;
+    box-shadow: 1.8px 2.4px 5px 0 #aaa;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+.form__info p{
+    font-size: 14px;
+    line-height: 2em;
+}
+.form__info span{
+    color: #e74149;
+    font-size: 16px;;
+}
+.form__list{
+    position: relative;
+}
+.form__list p{
+    font-size: 20px;
+    margin-top: 50px;
+}
+.form__list .check{
+    position: absolute;
+    bottom: -30px;
+    font-size: 16px;
+    color: #e74149;
+}
+.form__list .check__hidden{
+    visibility: hidden;
+}
+.required p:after{
+    content: '*';
+    color: #e74149;
+    font-size: 16px;
+    margin-left: 5px;
+    vertical-align: super;
+    line-height: 0;
+}
+.form__list input{
+    margin-top: 20px;
+    width: 287px;
+    border: solid 1px #d0d0d0;
+    font-size: 16px;
+    padding: 5px;
+}
+.form__list input::placeholder{
+    color: #d0d0d0;
+    font-weight: 300;
+}
+.form__list .options{
+    margin-top: 15px;
+}
+.form__list .options input{
+    width: 15px;
+    margin-top: 10px;
+    margin-right: 8px;
+    
+}
+.form__list .form__desc{
+    margin-top: 12px;
+    font-size: 14px;
+}
+.submit input{
+    width: 90px;
+    height: 40px;
+    background: #fad312;
+    border-radius: 3px;
+    border: 0;
+    margin-top: 60px;
+    font-size: 15px;
+    transition: background 0.2s;
+}
+.submit input:hover{
+    cursor: pointer;
+    background: #ffe561;
+}
+.submit .form__desc{
+    margin-top: 20px;
+    font-size: 14px;
+}
+footer p{
+    font-size: 13px;
+    background: #000;
+    color: #999999;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0;
+}
+
+/* ==========RWD========== */
+
+@media(max-width:768px){
+    .wrapper{
+        width: 75%;
+    }
+    .form__info h1{
+        font-size: 32px;
+    }
+    .form__list input{
+        width: 80%;
+}
